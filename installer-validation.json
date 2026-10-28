@@ -1,20 +1,22 @@
 {
-  "status": "passed",
   "version": "1.0",
-  "single_file": "ProbablyStolen_Korean_Patch_1.0.bat",
-  "bat_sha256": "ccbfa6e5f4ac5b60455c600675ff1da9f7d3dcf8b56c1d8227a8ef109939bcd9",
-  "checks": [
-    "single_bat_only_fresh_install_exact_7_target_hashes",
-    "no_support_files_exposed_next_to_bat",
-    "repeat_install_no_rewrite",
-    "same_bat_restore_originals_and_remove_mod_additions",
-    "embedded_readme_and_font_licenses_menu_available",
-    "wrong_original_rejected_without_writes",
-    "corrupt_single_file_payload_rejected_without_writes",
-    "real_game_unchanged_game_never_executed"
-  ],
-  "game_executed": false,
-  "real_game_modified": false,
-  "unchanged_core_rollback_test": "Previously passed forced mid-install failure restores original files; core code and data unchanged.",
-  "embedded_manifest_sha256": "d77bab6cf20335929cc930eb4172ba1f195374e063a6d826fe5929c404ad4093"
+  "status": "passed",
+  "bat_sha256": "10af2a7c892ac8bf0f420539b9c947607196c9cf15cf6120278cc901d6c92c69",
+  "auto_detection": {
+    "status": "passed",
+    "unit_cases": 11,
+    "end_to_end": [
+      "single_BAT_next_to_EXE_auto_installs_without_path_argument",
+      "EXE_drag_argument_resolves_game_directory",
+      "same_BAT_auto_detects_game_for_restore",
+      "all_7_target_hashes_exact",
+      "originals_restored_and_added_mod_files_removed",
+      "actual_game_unchanged_no_game_execution"
+    ],
+    "bat_sha256": "10af2a7c892ac8bf0f420539b9c947607196c9cf15cf6120278cc901d6c92c69",
+    "finder_sha256": "79a65e3f33fa9226087b20c81c5980b4de72af721a9154a9d21c73de898ec5b2",
+    "game_executed": false,
+    "real_game_modified": false
+  },
+  "unchanged_patch_data_and_engine": true
 }

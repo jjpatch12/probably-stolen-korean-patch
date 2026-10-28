@@ -4,6 +4,7 @@ Set-StrictMode -Version 2
 [Console]::OutputEncoding=[System.Text.UTF8Encoding]::new($false)
 $OutputEncoding=[System.Text.UTF8Encoding]::new($false)
 $PackageRoot=Split-Path -Parent $PSScriptRoot
+. (Join-Path $PSScriptRoot 'FindGame.ps1')
 function Hash([string]$Path) {
     $stream=[IO.File]::OpenRead($Path); $algorithm=[Security.Cryptography.SHA256]::Create()
     try { return [BitConverter]::ToString($algorithm.ComputeHash($stream)).Replace('-','').ToLowerInvariant() }
@@ -18,19 +19,7 @@ function Within([string]$Root,[string]$Relative) {
     return $path
 }
 function GameFolder {
-    if (!$GamePath) {
-        foreach ($candidate in @($PackageRoot,(Split-Path -Parent $PackageRoot))) {
-            if (Test-Path -LiteralPath (Join-Path $candidate 'Probably Stolen.exe')) { return $candidate }
-        }
-        if ($NonInteractive) { throw 'GamePath is required.' }
-        Add-Type -AssemblyName System.Windows.Forms
-        $dialog=New-Object System.Windows.Forms.FolderBrowserDialog
-        $dialog.Description='Probably Stolen.exe가 있는 게임 폴더를 선택하세요.'
-        $dialog.ShowNewFolderButton=$false
-        if ($dialog.ShowDialog() -ne [Windows.Forms.DialogResult]::OK) { throw '폴더 선택을 취소했습니다.' }
-        return $dialog.SelectedPath
-    }
-    return (Resolve-Path -LiteralPath $GamePath).Path
+    return (Find-PSGame -GamePath $GamePath -BatPath $env:PSKR_SELF -NonInteractive:$NonInteractive)
 }
 function EnsureStopped {
     if (Get-Process -Name 'Probably Stolen' -ErrorAction SilentlyContinue) { throw '게임을 종료한 뒤 다시 실행하세요.' }
