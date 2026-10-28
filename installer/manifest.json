@@ -1,0 +1,102 @@
+{
+  "format": "PSKRDP01 gzip COPY/ADD",
+  "version": "0.1",
+  "created_date_kst": "2026-10-29",
+  "game": "Probably Stolen",
+  "base_locale": "en",
+  "translation_entries": 6680,
+  "localized_images": 19,
+  "logos_retained": true,
+  "font_ui": "Noto Sans KR Medium",
+  "font_display": "NeoDunggeunmo",
+  "files": [
+    {
+      "path": "Probably Stolen_Data/resources.assets",
+      "source_sha256": "434f15ac02a66b21eaa9b9f22e7ba0b153df545b99eb7f480779f0da58412e6c",
+      "target_sha256": "b736a634c8a951aa09e5d66cb72bb6cfb3d2309891038fc096b329de6bceef21",
+      "target_bytes": 54335632,
+      "patch": "data/01.pskr.gz",
+      "patch_sha256": "8e6645014da3dd10bd0616f13b7b00e80a388193538b0e2cb737fc7e045b28a0",
+      "copy_bytes": 52424091,
+      "new_bytes": 1911541
+    },
+    {
+      "path": "Probably Stolen_Data/sharedassets0.assets",
+      "source_sha256": "e187563b513d5a09529dfade554a7f52f7fccf1d9b48d005578a46be2ff1f601",
+      "target_sha256": "25eeb53948185d6e2de3850d15e06bab9f13edd3e752fffefe2acbe2f1670458",
+      "target_bytes": 245717464,
+      "patch": "data/02.pskr.gz",
+      "patch_sha256": "8e0c592aa70da5d7048d1d584e9f1f17bb3de9177b5d605e18dd53966c3efd52",
+      "copy_bytes": 201368354,
+      "new_bytes": 44349110
+    },
+    {
+      "path": "Probably Stolen_Data/sharedassets1.assets",
+      "source_sha256": "afe3dddfc781def110fd8fce5b7aff4c6988c405af6222e177a68eea45620c77",
+      "target_sha256": "a5922023c568bedd7f358c511f7883da4415611d07ac626e3a544598de50511e",
+      "target_bytes": 66562520,
+      "patch": "data/03.pskr.gz",
+      "patch_sha256": "092221a990af30f786158b00798c656cac53fe00cead99d7062fb39e3016c688",
+      "copy_bytes": 58587332,
+      "new_bytes": 7975188
+    },
+    {
+      "path": "Mods/PSKoreanEnglishBase/manifest.xml",
+      "source_sha256": null,
+      "target_sha256": "3ee14d674b2f3b9e10a5955c97e9b8d09e135d487ff072fe8419e5de415d8aa6",
+      "target_bytes": 490,
+      "patch": "data/04.pskr.gz",
+      "patch_sha256": "5cda1178f57cece831b42669dcb46c970efc5e4158809fb6575d85d8f55c76fc",
+      "copy_bytes": 0,
+      "new_bytes": 490
+    },
+    {
+      "path": "Mods/PSKoreanEnglishBase/PSKoreanEnglishBase.dll",
+      "source_sha256": null,
+      "target_sha256": "e43df49a2808502ea873902e1cb837ca7bd1e032883c467f9bef2cfe4496d14d",
+      "target_bytes": 10240,
+      "patch": "data/05.pskr.gz",
+      "patch_sha256": "14a8682d956f3bc29ba272e737b2f107d660345d5ec0f50f4b64d20d102c9b9c",
+      "copy_bytes": 0,
+      "new_bytes": 10240
+    },
+    {
+      "path": "Probably Stolen_Data/StreamingAssets/aa/catalog.json",
+      "source_sha256": "f4994676120a418f9240b8d6cde9c5fca644cfe289f8a0a1b825bec42cc32568",
+      "target_sha256": "747ead69ae83da698d353c9aeadfa665802d6f5c7abed17137d5d50c75ad5269",
+      "target_bytes": 132198,
+      "patch": "data/06.pskr.gz",
+      "patch_sha256": "365852908c6db514823d80dc934d1f32bcfa1abaf3d607acaa66bea912b90603",
+      "copy_bytes": 0,
+      "new_bytes": 132198
+    },
+    {
+      "path": "Probably Stolen_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle",
+      "source_sha256": "5ea4937f26ca954a5f9659d764fa2e47542ccf0fc6ff77f90402bbd1bf0921c6",
+      "target_sha256": "c9671486d26723f38535c81c6c7e10330eea1be7da4fab6dd494d7125ade0359",
+      "target_bytes": 182147,
+      "patch": "data/07.pskr.gz",
+      "patch_sha256": "d2682b9dff2078a8bad7abce93858a9f3eaa79fa83803ac07b16dc6cf19dd790",
+      "copy_bytes": 0,
+      "new_bytes": 182147
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "Probably Stolen_Data/resources.assets.resS",
+      "sha256": "a6fb717e183590e140ab85ffac2df0161ff959ec3bb6acc98db4d140072ee8a1"
+    },
+    {
+      "path": "Probably Stolen_Data/sharedassets0.assets.resS",
+      "sha256": "ab53939dfb9115817b8cb2e4a4a1200151d9d5403eaef11fdceab612b598b37f"
+    },
+    {
+      "path": "Probably Stolen_Data/sharedassets1.assets.resS",
+      "sha256": "1f19d394af5774d6bd98cf3b399a022d770d74705ccd15961f0ed62c24b43d22"
+    },
+    {
+      "path": "Probably Stolen_Data/Managed/Assembly-CSharp.dll",
+      "sha256": "dd313f73681d5146581f5dc6f981aec22e925c4602cd93c1e99fdee2d38f9152"
+    }
+  ]
+}

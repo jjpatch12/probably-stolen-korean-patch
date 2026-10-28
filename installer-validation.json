@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "checks": [
+    "fresh_install_all_7_files_exact_sha256",
+    "already_installed_no_rewrite_or_extra_backup",
+    "uninstall_restores_all_originals_and_removes_added_mod_files",
+    "repeat_uninstall_no_changes",
+    "wrong_version_rejected_before_any_write",
+    "corrupt_payload_rejected_before_any_write",
+    "forced_mid_install_failure_rolls_back_originals_and_added_files",
+    "unrelated_user_file_preserved",
+    "actual_game_files_unchanged_no_game_execution"
+  ],
+  "game_executed": false,
+  "real_game_modified": false,
+  "package_manifest_sha256": "26f603c9d5c78692c261ff4dc04100066d8b0f485050deb053ad70a38b1fcc7e"
+}
