@@ -1,6 +1,6 @@
 {
   "format": "PSKRDP01 gzip COPY/ADD",
-  "version": "0.1",
+  "version": "1.0",
   "created_date_kst": "2026-10-29",
   "game": "Probably Stolen",
   "base_locale": "en",

@@ -1,17 +1,20 @@
 {
   "status": "passed",
+  "version": "1.0",
+  "single_file": "ProbablyStolen_Korean_Patch_1.0.bat",
+  "bat_sha256": "ccbfa6e5f4ac5b60455c600675ff1da9f7d3dcf8b56c1d8227a8ef109939bcd9",
   "checks": [
-    "fresh_install_all_7_files_exact_sha256",
-    "already_installed_no_rewrite_or_extra_backup",
-    "uninstall_restores_all_originals_and_removes_added_mod_files",
-    "repeat_uninstall_no_changes",
-    "wrong_version_rejected_before_any_write",
-    "corrupt_payload_rejected_before_any_write",
-    "forced_mid_install_failure_rolls_back_originals_and_added_files",
-    "unrelated_user_file_preserved",
-    "actual_game_files_unchanged_no_game_execution"
+    "single_bat_only_fresh_install_exact_7_target_hashes",
+    "no_support_files_exposed_next_to_bat",
+    "repeat_install_no_rewrite",
+    "same_bat_restore_originals_and_remove_mod_additions",
+    "embedded_readme_and_font_licenses_menu_available",
+    "wrong_original_rejected_without_writes",
+    "corrupt_single_file_payload_rejected_without_writes",
+    "real_game_unchanged_game_never_executed"
   ],
   "game_executed": false,
   "real_game_modified": false,
-  "package_manifest_sha256": "26f603c9d5c78692c261ff4dc04100066d8b0f485050deb053ad70a38b1fcc7e"
+  "unchanged_core_rollback_test": "Previously passed forced mid-install failure restores original files; core code and data unchanged.",
+  "embedded_manifest_sha256": "d77bab6cf20335929cc930eb4172ba1f195374e063a6d826fe5929c404ad4093"
 }

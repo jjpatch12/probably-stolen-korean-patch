@@ -156,7 +156,7 @@ try {
     }
     Write-Host '한국어 패치 설치 완료! 게임 언어를 English로 설정하세요.' -ForegroundColor Green
     Write-Host ('원본 백업: '+$snapshot)
-    Write-Host '복원은 Uninstall_Korean.bat를 실행하세요.'
+    Write-Host '복원은 같은 BAT를 다시 실행하고 [2] 원본 복원을 선택하세요.'
     exit 0
 } catch {
     Write-Host ('오류: '+$_.Exception.Message) -ForegroundColor Red
